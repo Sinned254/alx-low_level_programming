@@ -3,7 +3,6 @@
  * main - entry point
  *
  * Return: zero always, printout a message
- *
  */	
 int main(void)
 {

@@ -9,12 +9,12 @@
  */
 int main(void)
 {
-	int k = 0;
+	int k;
 
 	while (k <= 9)
 	{
-		putchar(k);
-		if (k < 9)
+		putchar('0' + k);
+		if (k < 10)
 		{
 			putchar(',');
 			putchar(' ');

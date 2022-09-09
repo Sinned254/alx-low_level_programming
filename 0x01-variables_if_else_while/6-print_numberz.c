@@ -8,11 +8,11 @@
  */
 int main(void)
 {
-	int j = 0;
+	int j;
 
 	while (j <= 9)
 	{
-		putchar(j);
+		putchar('0' + j);
 		j++;
 	}
 	putchar('\n');

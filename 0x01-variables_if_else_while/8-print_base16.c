@@ -8,17 +8,17 @@
  */
 int main(void)
 {
-	int hex = 0;
+	int hex;
 
 	while (hex < 16)
 	{
 		if (hex <= 9)
 		{
-			putchar(hex);
+			putchar('0' + hex);
 		}
 		else if (hex > 9)
 		{
-			putchar(hex + 'a');
+			putchar('a' + hex % 10);
 		}
 		hex++;
 	}

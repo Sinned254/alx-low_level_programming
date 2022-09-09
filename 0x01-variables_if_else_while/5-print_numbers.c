@@ -1,10 +1,10 @@
 #include <stdio.h>
 /**
- * main- entry to the program
+ * main - print single digit numbers
  *
- * Description: print single digits numbers
+ * Description: print single digit numbers
  *
- * Retur: zero alway is success
+ * Return: Always 0 (Success)
  */
 int main(void)
 

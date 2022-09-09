@@ -1,14 +1,12 @@
 #include <stdio.h>
 #include <time.h>
 #include <stdlib.h>
-
-/*
- * main- entry to the program
+/**
+ * main - print last digit in random number
  *
- * Description: Asses a random number,display if last digit is
- * less than 6 or greater than 5 or is zero.
+ * Description: print last digit in random number
  *
- * Return: zere if successful
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
@@ -25,4 +23,3 @@ int main(void)
 		printf("Last digit of %d is 0 and is 0\n", n);
 	return (0);
 }
-

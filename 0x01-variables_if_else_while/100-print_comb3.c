@@ -1,10 +1,10 @@
 #include <stdio.h>
 /**
- * main- entry to the prongram
+ * main- print numbers, entry to the prongram
  *
  * Description: prints all possible combination of two digits
  *
- * Return 0 success
+ * Return: 0 success
  */
 int main(void)
 {

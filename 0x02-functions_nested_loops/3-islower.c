@@ -2,7 +2,7 @@
 /**
  * _islower - check letter if lower case
  *
- * @c parameter to check
+ *@c: parameter to check
  *
  * Return: 1 if lowercase o otherwise
  */

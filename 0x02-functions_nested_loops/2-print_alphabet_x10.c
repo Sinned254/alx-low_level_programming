@@ -1,4 +1,4 @@
-#include <main.h>
+#include "main.h"
 /**
  * print_alphabet_x10 - print alphabet a - z 10times
  *
@@ -11,7 +11,7 @@ void print_alphabet_x10(void)
 
 	while (i <= 10)
 	{
-		for (alpha = 'a' alpha <= 'z' alpha++)
+		for (alpha = 'a'; alpha <= 'z'; alpha++)
 			_putchar(alpha);
 
 		_putchar("\n");

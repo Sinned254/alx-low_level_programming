@@ -1,6 +1,5 @@
 #include <stdio.h>
-#include "main.h"
-#include <unistd.h>
+#include <main.h>
 /**
  * main - prints _putchar to the screen
  *
@@ -17,4 +16,3 @@ int main(void)
 
 	return (0);
 }
-

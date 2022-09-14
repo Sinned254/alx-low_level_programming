@@ -4,9 +4,8 @@
  *@int: numbers to add
  * Return: results of integers
  */
-int add(int, int)
+int add(int num1, int num2)
 {
-	int num1, num2;
 	int sum;
 
 	sum = num1 + num2;

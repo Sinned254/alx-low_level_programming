@@ -1,20 +1,20 @@
-#include <main.h>
+#include <stdio.h>
 /**
  * main- print fizz if divisble by 3, Buzz if divisible by 5
  * and FizzBuzz if divisible by both 3 & 5
  *
- * return: 0 succes
+ * Return: 0 succes
  */
 int main(void)
 {
 	int i;
 
-	for (i = 0; i <= 100; i++)
+	for (i = 1; i <= 100; i++)
 	{
 		if (i % 3 == 0 && i % 5 == 0)
 			printf("FizzBuzz ");
 		else if (i % 5 == 0)
-			if (n == 100)
+			if (i == 100)
 				printf("Buzz");
 			else
 				printf("Buzz ");
@@ -23,6 +23,7 @@ int main(void)
 		else
 			printf("%d ", i);
 	}
+	printf("\n");
 	return (0);
 }
 

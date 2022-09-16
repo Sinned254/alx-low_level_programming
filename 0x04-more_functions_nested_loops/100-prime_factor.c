@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- * main - finds and print the largest prime factor of the number
+ * main- finds and print the largest prime factor of the number
  *
- * return: 0 success
+ * Return: void
  */
 int main(void)
 {

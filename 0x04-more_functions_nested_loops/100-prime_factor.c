@@ -10,14 +10,14 @@ int main(void)
 	long int i = n;
 	long int j = 2;
 
-	while (i != 2)
+	while (i != j)
 	{
 		if (i % j == 0)
 			i = i / j;
 		else
 			j++;
 	}
-	print("li\n", i);
+	printf("%li\n", i);
 
 	return (0);
 }

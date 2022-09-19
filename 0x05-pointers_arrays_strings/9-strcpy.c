@@ -3,7 +3,7 @@
  * _strcpy - copy string including null byte
  * @dest: destination poniter
  * @src: source pointer
- * return: ponter to destination
+ * Return: ponter to destination
  */
 char *_strcpy(char *dest, char *src)
 {

@@ -16,13 +16,15 @@ char *cap_string(char *s)
 		{
 			if (i == 0)
 				s[i] = s[i] - 32;
-			else if (s[prec] == ' ' || s[prec] == '\n' || s[prec] == '\t' || s[prec] == ';')
+			else if (s[prec] == ' ' || s[prec] == '\n' || s[prec] == '\t')
 				s[i] = s[i] - 32;
-			else if (s[prec] == '!' || s[prec] == '?' || s[prec] == ',' || s[prec] == '.')
+			else if (s[prec] == '!' || s[prec] == '?' || s[prec] == ',')
 				s[i] = s[i] - 32;
-			else if (s[prec] == '"' || s[prec] == '(' || s[prec] == ')' || s[prec] == '{')
+			else if (s[prec] == '"' || s[prec] == '(' || s[prec] == ')')
 				s[i] = s[i] - 32;
 			else if (s[prec] == '}')
+				s[i] = s[i] - 32;
+			else if (s[prec] == ';' || s[prec] == '.' || s[prec] == '{')
 				s[i] = s[i] - 32;
 			else if (s[i] >= 'A' && s[i] <= 'Z')
 				s[i] = s[i] + 32;

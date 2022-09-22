@@ -7,54 +7,24 @@
 char *cap_string(char *s)
 {
 	int i;
+	int prec;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		if (i == 0)
+		prec = i - 1;
+		if (s[i] >= 'a' && s[i] <= 'z')
 		{
-			if (s[i] >= 'a' && s[i] <= 'z')
-			s[i] = s[i] - 32;
-			continue;
-		}
-		if (s[i] == ' ' || s[i] == '\n' || s[i] == '\t' || s[i] == ';')
-		{
-			++i;
-			if (s[i] >= 'a' && s[i] <= 'z')
-			{
+			if (i == 0)
 				s[i] = s[i] - 32;
-				continue;
-			}
-		}
-		if (s[i] == '!' || s[i] == '?' || s[i] == ',' || s[i] == '.')
-		{
-			++i;
-			if (s[i] >= 'a' && s[i] <= 'z')
-			{
+			else if (s[prec] == ' ' || s[prec] == '\n' || s[prec] == '\t' || s[prec] == ';')
 				s[i] = s[i] - 32;
-				continue;
-			}
-		}
-		if (s[i] == '"' || s[i] == '(' || s[i] == ')' || s[i] == '{')
-		{
-			++i;
-			if (s[i] >= 'a' && s[i] <= 'z')
-			{
+			else if (s[prec] == '!' || s[prec] == '?' || s[prec] == ',' || s[prec] == '.')
 				s[i] = s[i] - 32;
-				continue;
-			}
-		}
-		if (s[i] == '}')
-		{
-			++i;
-			if (s[i] >= 'a' && s[i] <= 'z')
-			{
+			else if (s[prec] == '"' || s[prec] == '(' || s[prec] == ')' || s[prec] == '{')
 				s[i] = s[i] - 32;
-				continue;
-			}
-		}
-		else
-		{
-			if (s[i] >= 'A' && s[i] <= 'Z')
+			else if (s[prec] == '}')
+				s[i] = s[i] - 32;
+			else if (s[i] >= 'A' && s[i] <= 'Z')
 				s[i] = s[i] + 32;
 		}
 

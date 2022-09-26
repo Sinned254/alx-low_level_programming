@@ -7,13 +7,13 @@
  *
  * Return: pointer tor the beggining of located string or NULL
  */
-char *_strstr(char *haystack, char *needle);
+char *_strstr(char *haystack, char *needle)
 {
 	int i, j;
 	int length;
 	int begin = 0;
 
-	for (lenght = 0; needle[length] != '\0'; length++)
+	for (length = 0; needle[length] != '\0'; length++)
 
 		for (j = 0; haystack[j] != '\0'; j++)
 		{

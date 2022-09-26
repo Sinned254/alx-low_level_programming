@@ -9,7 +9,7 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int initial_length = 0;
-	unsigned start = 0;
+	unsigned int start = 0;
 	int i, j;
 
 	for (i = 0; s[i] != '\0'; i++)

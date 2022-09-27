@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_daidsums - print the sum of the two diagonals of a matrix of ints
+ * print_diagsums - print the sum of the two diagonals of a matrix of ints
  * @a: pointer to the array
  * @size: array size
  *

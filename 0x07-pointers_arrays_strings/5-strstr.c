@@ -15,19 +15,19 @@ char *_strstr(char *haystack, char *needle)
 
 	for (length = 0; needle[length] != '\0'; length++)
 
-		for (j = 0; haystack[j] != '\0'; j++)
+	for (j = 0; haystack[j] != '\0'; j++)
+	{
+		for (i = 0; i < length && haystack[j] == needle[i]; i++, j++)
 		{
-			for (i = 0; i < length && haystack[j] == needle[i]; i++, j++)
+			if (i == 0)
 			{
-				if (i == 0)
-				{
-					begin = j;
-				}
-				if (i == length - 1)
-				{
-					return (haystack + begin);
-				}
+				begin = j;
+			}
+			if (i == length - 1)
+			{
+				return (haystack + begin);
 			}
 		}
+	}
 	return (NULL);
 }

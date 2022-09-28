@@ -17,9 +17,9 @@ int checkprime(int i, int num)
 	{
 		return (0);
 	}
-	 else
+	else
 	{
-		return checkprime(i + 1, num);
+		return (checkprime(i + 1, num));
 	}
 }
 /**
@@ -39,6 +39,6 @@ int is_prime_number(int n)
 	}
 	else
 	{
-		return(checkprime(strt, n));
+		return (checkprime(strt, n));
 	}
 }

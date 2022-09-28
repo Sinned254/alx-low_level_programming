@@ -5,7 +5,7 @@
  * @num: number
  * @i: checker
  *
- * return: 1 0r 0
+ * Return: 1 0r 0
  */
 int checkprime(int i, int num)
 {

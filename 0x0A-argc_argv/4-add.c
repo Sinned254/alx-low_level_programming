@@ -3,7 +3,7 @@
 /**
  * main - add arguments check if int
  *
- * @igrgv: array of arguments
+ * @argv: array of arguments
  * @argc: arguments count
  *
  * description - check argumnts then add them if intigers

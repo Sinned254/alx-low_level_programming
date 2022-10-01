@@ -3,8 +3,10 @@
 /**
  * main - add arguments check if int
  *
- * @argv: array of arguments
+ * @igrgv: array of arguments
  * @argc: arguments count
+ *
+ * description - check argumnts then add them if intigers
  * Return: 0 success
  */
 int main(int argc, char *argv[])
@@ -14,14 +16,14 @@ int main(int argc, char *argv[])
 
 	if (argc > 1)
 	{
-		for (i = 0; i < argc; i++)
+		for (i = 1; i < argc; i++)
 		{
-			check = isdigit(**(argv + 1));
-			if (check)
+			check = is_int(argv[i]);
+			if (!check)
 			{
 				sum = sum + atoi(argv[i]);
 			}
-			if(!check)
+			else
 			{
 				printf("Error\n");
 				return (1);
@@ -34,5 +36,26 @@ int main(int argc, char *argv[])
 		printf("0\n");
 	}
 	return (0);
+}
+
+/**
+ * is_int - check input if int
+ * @s: string
+ * description -check inpurt if int
+ * Return: checked input
+ */
+int is_int(char *s)
+{
+	unsigned int i = 0;
+
+	while (*(s + i) != '\0')
+	{
+		if (isdigit(*(s + i)))
+		{
+			return (0);
+		}
+		i++;
+	}
+	return (1);
 }
 

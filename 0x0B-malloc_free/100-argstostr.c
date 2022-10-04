@@ -7,12 +7,12 @@
  *
  * Return: pointer to concatinated string
  */
-char *argstostr(unsigned int ac, char **av)
+char *argstostr(int ac, char **av)
 {
-	unsigned int i, j, k, l;
+	int i, j, k, l;
 	char *ptr;
 
-	if ((ac == 0) || av == NULL)
+	if (ac == 0 || av == NULL)
 	{
 		return (NULL);
 	}
@@ -23,6 +23,7 @@ char *argstostr(unsigned int ac, char **av)
 	while (i < ac)
 	{
 		l = l + _strlen(av[i]) + 1;
+		i++;
 	}
 	ptr = (char *) malloc(sizeof(char) * l + 1);
 	if (ptr == NULL)
@@ -50,7 +51,7 @@ char *argstostr(unsigned int ac, char **av)
  *
  * Return: string length
  */
-unsigned int _strlen(char *s)
+int _strlen(char *s)
 {
 	int i;
 	int len = 0;

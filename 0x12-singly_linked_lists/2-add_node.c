@@ -5,7 +5,7 @@
  * @str: name
  * Return:pointer to the new aelement
  */
-list_t *add_node(list_t **head, const *str)
+list_t *add_node(list_t **head, const char *str)
 {
 	list_t *new;
 	char *s;

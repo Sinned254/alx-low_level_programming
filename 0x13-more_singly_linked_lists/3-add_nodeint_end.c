@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * add_node_end - add node at the end of the list
+ * add_nodeint_end - add node at the end of the list
  * @head: head node
  * @n: int value
  * Return: pointer to the newly created int
@@ -22,7 +22,7 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 	}
 
 	temp = *head;
-	while(temp->next != NULL)
+	while (temp->next != NULL)
 	{
 		temp = temp->next;
 	}
